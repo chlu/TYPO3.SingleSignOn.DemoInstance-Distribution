@@ -6,7 +6,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "ssh://review.networkteam.com:29418/flow3/projects/somea/packages/Acme.DemoInstance.git",
+                "url": "https://github.com/chlu/TYPO3.SingleSignOn.DemoInstance.git",
                 "reference": "8005da63d67d02af1f209327bc415764aed797cb"
             },
             "require": {
