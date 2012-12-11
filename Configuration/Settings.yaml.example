@@ -1,0 +1,24 @@
+#                                                                        #
+# Example Settings                                                       #
+#                                                                        #
+# This file contains settings for various parts of the application.      #
+# Copy this file to Settings.yaml, and adjust as necessary.              #
+#                                                                        #
+# Please refer to the default settings file(s) or the manuals for        #
+# possible configuration options.                                        #
+#                                                                        #
+
+TYPO3:
+  SingleSignOn:
+    Client:
+      client:
+        # NOTICE: You have to set the service base URI of the client (acts as the client identifier)
+        serviceBaseUri: 'http://ssoinstance/sso'
+        # Client key pair will be set by setup command
+        keyPairUuid: ''
+      server:
+        DemoServer:
+          # Public key of server will be set by setup command
+          publicKeyUuid: ''
+          # NOTICE: You have to set the SSO server service base URI
+          serviceBaseUri: 'http://ssoserver/sso'
