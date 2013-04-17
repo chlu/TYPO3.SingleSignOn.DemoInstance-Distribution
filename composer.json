@@ -1,37 +1,37 @@
 {
-    "name": "typo3/singlesignon-demoinstance-distribution",
-    "description" : "Demo distribution for the SSO Client",
-    "repositories": [
+	"name": "typo3/singlesignon-demoinstance-distribution",
+	"description": "Demo distribution for the SSO Client",
+	"repositories": [
 		{
-            "type": "composer",
-            "url": "http://ci.typo3.robertlemke.net/job/composer-packages/ws/repository/"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/chlu/TYPO3.SingleSignOn.DemoInstance.git"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/chlu/TYPO3.SingleSignOn.Client.git"
-        }
-    ],
-    "config": {
-        "vendor-dir": "Packages/Libraries",
-        "bin-dir": "bin"
-    },
-    "require": {
-		"typo3/flow": "dev-master",
-        "acme/demoinstance": "dev-master"
-    },
-    "require-dev": {
-        "typo3/kickstart": "dev-master",
-        "typo3/buildessentials": "dev-master",
-        "mikey179/vfsstream": "1.1.*",
-		"mockery/mockery": "0.7.*"
-    },
-    "minimum-stability": "dev",
-    "scripts": {
-        "post-update-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
-        "post-install-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall"
-    }
+			"type": "composer",
+			"url": "http://ci.typo3.robertlemke.net/job/composer-packages/ws/repository/"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/chlu/TYPO3.SingleSignOn.DemoInstance.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/chlu/TYPO3.SingleSignOn.Client.git"
+		}
+	],
+	"config": {
+		"vendor-dir": "Packages/Libraries",
+		"bin-dir": "bin"
+	},
+	"require": {
+		"typo3/flow": "2.0.*@dev",
+		"symfony/console": "2.1.*",
+		"acme/demoinstance": "dev-master"
+	},
+	"require-dev": {
+		"typo3/buildessentials": "2.0.*@dev",
+		"mikey179/vfsstream": "1.1.*",
+		"mockery/mockery": "0.8.*"
+	},
+	"minimum-stability": "dev",
+	"scripts": {
+		"post-update-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+		"post-install-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall"
+	}
 }
